@@ -15,6 +15,11 @@ namespace MvcApplication38.Controllers
             return View();
         }
 
+        public ActionResult Foo() 
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your app description page.";
