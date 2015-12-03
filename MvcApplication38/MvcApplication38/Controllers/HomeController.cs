@@ -17,6 +17,7 @@ namespace MvcApplication38.Controllers
 
         public ActionResult Foo() 
         {
+            ViewBag.Message = "Mi name is Ricardo";
             return View();
         }
 
