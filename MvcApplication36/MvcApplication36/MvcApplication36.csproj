@@ -182,11 +182,14 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PersonController.cs" />
+    <Compile Include="Controllers\SocioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\PersonContext.cs" />
+    <Compile Include="Models\Socio.cs" />
+    <Compile Include="Models\SocioContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -309,6 +312,11 @@
     <Content Include="Views\Person\Create.cshtml" />
     <Content Include="Views\Person\Edit.cshtml" />
     <Content Include="Views\Person\Delete.cshtml" />
+    <Content Include="Views\Socio\Index.cshtml" />
+    <Content Include="Views\Socio\Details.cshtml" />
+    <Content Include="Views\Socio\Create.cshtml" />
+    <Content Include="Views\Socio\Edit.cshtml" />
+    <Content Include="Views\Socio\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
