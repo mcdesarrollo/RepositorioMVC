@@ -8,6 +8,9 @@
         <meta name="viewport" content="width=device-width" />
         @Styles.Render("~/Content/css")
         @Scripts.Render("~/bundles/modernizr")
+
+        <link href="~/Content/themes/base/jquery.ui.all.css" rel="stylesheet" />
+
     </head>
     <body>
         <header>
@@ -44,6 +47,19 @@
         </footer>
 
         @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/jqueryui")
+        
         @RenderSection("scripts", required: false)
+
+        <script>
+
+            $(function () {
+                if (!Modernizr.inputtypes.datetime) {
+                    $("input[type='datetime']").datepicker();
+                }
+            });
+
+        </script>
+
     </body>
 </html>
